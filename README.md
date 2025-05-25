@@ -2,9 +2,9 @@
 Website for NIC Club
 ## Responsibilities
 ```
-├──  Home page – Pavan
-├──  Join page – Pavan
-├──  Events page – Surabhi
-├──  Know More page – Soujanya
-├──  Registration page
+|__  Home page – Pavan
+|__  Join page – Pavan
+|__  Events page – Surabhi
+|__  Know More page – Soujanya
+|__  Registration page
 ```
