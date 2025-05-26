@@ -1,5 +1,246 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
 
-h1{
+    font-family: "Rubik",sans-serif;
+    font-weight: 400;
+    font-size: 20px;
+}
+body{
+        background-color: #ffffff;
+}
+a{
+    color:#333333;
+    text-decoration: none;
+}
+.logo{
+    height: 36px;
+    width: 42px;
+    margin-left: 100px;
+    cursor: pointer;
+}
+header{
+    position: sticky;
+    top: 0;
+    overflow: hidden;
+    z-index: 10;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 9%;
+    background: #f3f3f3;
+
+    box-shadow: 0 2px 20px rgba(255, 255, 255, 0.97);
+
+
+}
+.navitems{
+    position: relative;
+    height: 50px;
+    width: 550px;
+    background:#ffffff;
+    border-radius: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    border-radius: 12px;
+    border: 1px solid #dddddd;
+}
+
+.navitems a{
+    position: relative;
+    transition: all 0.3s ease 0.1s;
+    padding: 19px;
+    color: #dd2c00;
+    z-index: 1;
+}
+.navitems a:hover{
+    color: #ffffff;
+}
+
+.innernav{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 95px;
+    height: 100%;
+    background: linear-gradient(45deg, #dd2c00, #e6a009);
+    border-radius: 8px;
+    transition: .3s;
+}
+.navitems a.active{
+    color: #ffffff;
+}
+.navitems a:nth-child(1):hover~.innernav{
+    left: 0;
+}
+
+.navitems a:nth-child(2):hover~.innernav{
+    left: 95px;
+}
+.navitems a:nth-child(3):hover~.innernav{
+    left: 189px;
+    width: 150px;
+}
+.navitems a:nth-child(4):hover~.innernav{
+    left: 335px;
+    width: 105px;
+}
+.navitems a:nth-child(5):hover~.innernav{
+    left: 430px;
+    width: 120px;
+}
+
+.hero{
     height: 100vh;
+}
+
+.heromain{
+    position: relative; 
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    padding: 2rem;
+    text-align: center;
+    backdrop-filter: blur(3px); /* do blur only for particular part*/
+    margin-top: 150px;
+}
+
+
+
+.heromain h2{
+    font-size: 70px;
+    color: #222;
+    font-weight: 700;
+    margin-bottom: 20px;
+    
+}
+
+.heromain p{
+    color: #333333;
+    margin-bottom: 20px;
+}
+
+.heromain button{
+    padding: 9px;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    margin: 10px;
+    transition: 0.3s ease;
+}
+
+
+#background-canvas {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: -1;
     width: 100vw;
+    height: 100vh;
+    pointer-events: none;
+    background: transparent;
+}
+
+
+.cards{
+    display: flex;
+    justify-content: space-between;
+    margin: 150px;
+     gap: 40px;
+    margin-top: 80px;
+    flex-wrap: wrap;
+}
+
+.card{
+    background-color: rgb(211, 211, 211);
+    width: 270px;
+    border-radius: 20px;
+    padding: 25px;
+
+}
+.card span{
+    margin: 10px 0;
+    color: #dd2c00;
+}
+.card h4{
+    margin: 20px 0;
+    color: #dd2c00;
+    
+}
+.card p{
+    font-size: 18px;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 14px rgba(0, 0, 0, 0.1);
+}
+
+
+
+@media (max-width: 1024px) {
+    .heromain h2 {
+        font-size: 42px;
+    }
+    .heromain p {
+        font-size: 16px;
+    }
+    .cards {
+        gap: 24px;
+        margin: 60px 40px 0 40px;
+    }
+    .card {
+        width: 220px;
+        padding: 24px;
+    }
+}
+
+@media (max-width: 768px) {
+    .heromain {
+        margin-top: 120px;
+        padding: 1rem;
+    }
+    .heromain h2 {
+        font-size: 34px;
+    }
+    .heromain p {
+        font-size: 15px;
+        max-width: 90%;
+    }
+    .mainbtn {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+    .mainbtn button {
+        width: 100%;
+        max-width: 240px;
+    }
+    .cards {
+        flex-direction: column;
+        align-items: center;
+        margin-top: 40px;
+        gap: 20px;
+    }
+    .card {
+        width: 90%;
+        max-width: 300px;
+        padding: 20px;
+    }
+    .card span {
+        font-size: 32px;
+    }
+    .card h4 {
+        font-size: 18px;
+    }
+    .card p {
+        font-size: 14px;
+    }
 }

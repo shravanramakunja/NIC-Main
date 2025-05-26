@@ -6,42 +6,78 @@
     <title>Nova Innovation Compskey</title>
     <link rel="stylesheet" href="style.css">
     <link rel="icon" type="image/x-icon" href="D:\coding\Nic\NIC-Main\img\nnic.png">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=copyright" />
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&family=Share+Tech&display=swap" rel="stylesheet">
+
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
+
 </head>
 <!-- Main body starts here -->
 <body>
+    <canvas id="background-canvas"></canvas>
+
     <header>
+        <img src="D:\coding\Nic\NIC-Main\img\nnic.png" alt="NIC Logo" class="logo">
         <nav>
-            <img src="D:\coding\Nic\NIC-Main\img\nnic.png" alt="NIC Logo">
-            <div>
-                <a href="/">Home</a>
-                <a href="/Join">Join</a>
-                <a href="/Events">Events</a>
-                <a href="/Know-more">Know more</a>
-                <a href="/register"></a>
+            <div class="navitems">
+                <a href="#hero" class="active">Home</a>
+                <a href="#About">About</a>
+                <a href="#Membership">Membership</a>
+                <a href="#Events">Events</a>
+                <a href="#Contact">Contact</a>
+                <span class="innernav"></span>
             </div>
         </nav>
     </header>
+    
 
-    <section>
-        <h2>Nova Innovative Compskey</h2>
-        <p>Fostering a vibrant community of tech enthusiasts
-            at MVJ College of Engineering.
-        </p>
-        <button>
-            Join NIC
-        </button>
+    <section class="hero">
+        <div class="heromain">
+            <h2>Nova Innovative Compskey</h2>
+            <p>Fostering a vibrant community of tech enthusiasts
+                at MVJ College of Engineering.(need to change)
+            </p>
+            <div class="mainbtn">
+                <button>Join NIC</button>
+                <button>Know more</button>
+            </div>
+        </div>
+        <!-- cards -->
+
+        <div class="cards">
+            <div class="card">
+                <span class="material-symbols-outlined">chevron_backward</span>
+                <span class="material-symbols-outlined">chevron_right</span>
+                <h4>Innovation</h4>
+                <p>Exploring cutting-edge technologies 
+                    and push the boundaries of what's possible.</p>
+            </div>
+            <div class="card">
+                <span class="material-symbols-outlined">group</span>
+                <h4>Collaboration</h4>
+                <p>Work with like-minded individuals to create impactful solutions.</p>
+            </div>
+            <div class="card">
+                <span class="material-symbols-outlined">lightbulb_2</span>
+                <h4>Learning</h4>
+                <p>Continuous growth through workshops, hackathons, and mentorship.</p>
+            </div>
+        </div>
     </section>
 
-    <section></section>
+    <section class="joinpage">
 
-    <footer>
+    </section>
+
+    <!-- <footer>
         <p> Copyright
         <span class="material-symbols-outlined">copyright</span>
         2025
         </p>
     <p> <i class="fa fa-copyright" aria-hidden="true"></i></p>
-    <p>al</p>
-    </footer>
+    </footer> -->
+    <script src="app.js"></script>
 </body>
 </html>
